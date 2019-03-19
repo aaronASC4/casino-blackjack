@@ -4,7 +4,7 @@ public class Main {
 	public static void main(String args[]) {
 		Suit jeff = Suit.SPADES; 
 		String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-		 Suit[] suits = {jeff} ;
+		Suit[] suits = {jeff} ;
 		 
 		 Card[] deck;
 		    
@@ -12,7 +12,7 @@ public class Main {
 			 
 			for(Suit suit : suits) {
 			     for(String rank : ranks) {
-			        deck[i++] = new Card(suits, rank);
+			        deck[i++] = new Card(suit, rank);
 			     }
 			 }
 	}
