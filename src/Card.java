@@ -1,25 +1,25 @@
 public class Card
 {
     private Suit suits;
-    private Rank value;
+    private Rank rank;
     
-    public Card(Suit suits, Rank value) {
+    public Card(Suit suits, Rank rank) {
     	this.suits = suits;
-    	this.value = value;
+    	this.rank = rank;
 	}
     
    public Suit getSuit() {
 	   return suits;
    }
    
-   public Rank getValue() {
-	   return value;
+   public Rank getRank() {
+	   return rank;
    }
    
    @Override
    public String toString() {
 	   
-	   return  this.value + " of " + this.suits.toString();
+	   return  this.rank + " of " + this.suits.toString();
 	   
    }
 }
