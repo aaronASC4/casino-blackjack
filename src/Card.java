@@ -1,10 +1,9 @@
 public class Card
 {
     private Suit suits;
-    private String value;
-	public static final int NUM_CARDS = 52;
+    private Rank value;
     
-    public Card(Suit suits, String value) {
+    public Card(Suit suits, Rank value) {
     	this.suits = suits;
     	this.value = value;
 	}
@@ -13,7 +12,14 @@ public class Card
 	   return suits;
    }
    
-   public String getValue() {
+   public Rank getValue() {
 	   return value;
+   }
+   
+   @Override
+   public String toString() {
+	   
+	   return  this.value + " of " + this.suits.toString();
+	   
    }
 }
